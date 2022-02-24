@@ -1,0 +1,19 @@
+
+.btn{
+  background-color: rgba(202, 9, 9, 0.938);  
+  color: #FFF;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  margin-top: 0.5em;
+  transition: .5s;
+  font-weight: bold;
+}
+
+
+.btn:hover{
+    color: rgba(202, 9, 9, 0.938);
+    background-color: #FFF;
+  }
+  
+  
+
