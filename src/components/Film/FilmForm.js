@@ -10,21 +10,20 @@ const FilmForm = ({handleSubmit, btnText, filmData}) => {
 
     const submit = (e) => {
         e.preventDefault()
-       handleSubmit(film)
+        handleSubmit(film)
     }
 
     function handleChange(e) {
         setFilm({...film, [e.target.name]: e.target.value})
     }
-    
-
+  
 
   return (
     <form onSubmit={submit} className={styles.form}>
       <Input
         type="text"
         text="Film Name"
-        name="name"
+        name="filmName"
         placeholder="Enter Film Name"
         handleOnChange={handleChange}
       />
@@ -38,10 +37,10 @@ const FilmForm = ({handleSubmit, btnText, filmData}) => {
       <Input
         type="text"
         text="Film Image"
-        name="filmImage"
+        name="imgUrl"
         handleOnChange={handleChange}
       />
-      <Select name="film_category" text="Film Category" handleOnChange={handleChange} />
+      <Select name="filmCategory" text="Film Category" handleOnChange={handleChange} />
       <SubmitButton text={btnText} />
     </form>
   );
